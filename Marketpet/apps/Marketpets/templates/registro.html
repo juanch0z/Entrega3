@@ -1,0 +1,117 @@
+{% extends "./inicio.html" %}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+    <style>
+
+      body {
+        background: #93a5cf;
+        background: linear-gradient(to right, #93a5cf, #e4efe9);
+      }
+
+      .bg {
+        background-image: url(img/BG.png);
+        background-position: center center;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="container w-75 bg-primary mt-5 rounded shadow">
+    <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+      </div>
+
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-end">
+          <img src="img/logo_pelau-removebg-preview.png" width="48 " alt="">
+        </div>
+
+        <h2 class="fw-bold text-center py-5"> Formulario de resgistro </h2>
+
+        <!-- LOGIN -->
+        <form id="agregarUsuarioSi" action="/cargarUsuario">
+          <div  class="mb-4">
+            <label for="name" class="form-label"> Nombres</label>
+            <input type="name" id="nombre" class="form-control" name="name">
+          </div>
+          <div class="mb-4">
+            <label for="name" class="form-label"> Apellidos </label>
+            <input type="name" id= "apeliido" class="form-control" name="name">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label"> Correo Electrónico </label>
+            <input type="email" id="correo" class="form-control" name="email">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label"> Password </label>
+            <input type="password" id="password" class="form-control" name="password">
+          </div>
+
+          <div class="d-grid">
+            <button href="inicio.html" type="submit" class="btn btn-primary" > Registrarse </button>
+          </div>
+
+        </form>
+
+        <!-- LOGIN CON REDES SOCIALES -->
+
+        <div class="container w-100 my-5">
+          <div class="row text-center">
+            <div class="col-12"> Iniciar Sesión</div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-outline-primary w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <img src="img/Facebook_f_logo_(2019).svg.png" width="32" alt="">
+                  </div>
+
+                  <div class="col-12 col-md-10 text-center">
+                    Facebook
+                  </div>
+
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-danger w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <img src="img/5a951939c4ffc33e8c148af2.png" width="32" alt="">
+                  </div>
+
+                  <div class="col-12 col-md-10 text-center">
+                    Google
+                  </div>
+
+                </div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</body>
+</html>
